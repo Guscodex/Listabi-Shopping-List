@@ -11,8 +11,9 @@ export const Home = () => {
 
 const styles = StyleSheet.create({
   container: {
+    fontSize: 25,
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#FFFF",
     alignItems: "center",
     justifyContent: "center",
   }
