@@ -14,6 +14,12 @@ export const Home = () => {
         
       </View>
 
+
+      <View style={styles.cardcenter}>
+        <Text style={styles.textcardcenter}>Que tal começar a adicionar produtos para comprar? </Text>
+        
+      </View>
+      
       {/* <TouchableHighlight onPress={() => {}}>
           <View style={styles.button01}>
             <Text style={styles.txt}>Vamos lá</Text>
@@ -59,6 +65,23 @@ const styles = StyleSheet.create({
     width: 320,
     height: 90,
     borderRadius:10,
+  },
+  cardcenter:{
+    backgroundColor: '#511E8B',
+    
+    width: 320,
+    height: 90,
+    borderRadius:10,
+  },
+  textcardcenter:{
+    textAlign: 'center',
+    fontSize: 15,
+    fontWeight:400,
+    paddingRight: 60,
+    paddingTop: 25,
+    paddingLeft:52,
+    
+    color: '#ffff'
   },
   textcard:{
     fontSize: 15,
