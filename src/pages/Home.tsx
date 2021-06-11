@@ -1,13 +1,20 @@
 import { processFontFamily } from 'expo-font';
 import React from 'react';
-import { StyleSheet, SafeAreaView, Text, View, Button,TouchableOpacity, TouchableHighlight } from 'react-native'
+import LogoGoogle from "../assets/google.png";
+
+
+import { StyleSheet, SafeAreaView, Text, View, Button,TouchableOpacity, TouchableHighlight, Image } from 'react-native'
 
 export const Home = () => {
   return (
     <SafeAreaView style={styles.container}>
       <Text>Home/Minha lista</Text>
+      <View style={styles.card}>
+        <Text style={styles.textcard}>É uma pena.. Infelizmente esse produto não possui certificações sustentáveis</Text>
+        
+      </View>
 
-      <TouchableHighlight onPress={() => {}}>
+      {/* <TouchableHighlight onPress={() => {}}>
           <View style={styles.button01}>
             <Text style={styles.txt}>Vamos lá</Text>
           </View>
@@ -22,7 +29,16 @@ export const Home = () => {
           <View style={styles.button03}>
           <Text style={styles.txt}>Vamos lá</Text>
           </View>
-         </TouchableHighlight>
+         </TouchableHighlight> */}
+  
+         <TouchableHighlight onPress={() => {}}>
+            <View style={styles.button04}>
+            <Text style={styles.txt}>Entrar com o google</Text>
+           
+            </View>
+          </TouchableHighlight> 
+         
+        
 
     </SafeAreaView>
 
@@ -38,7 +54,22 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-
+  card:{
+    backgroundColor: '#5A818A',
+    width: 320,
+    height: 90,
+    borderRadius:10,
+  },
+  textcard:{
+    fontSize: 15,
+    fontWeight:400,
+    paddingRight: 26,
+    paddingTop: 18,
+    paddingLeft:25,
+    paddingBottom: 18,
+    color: '#ffff'
+  },
+  
   button01:{
       alignItems: "center",
       backgroundColor: "#66A466",
@@ -59,8 +90,8 @@ const styles = StyleSheet.create({
       borderColor:"#66A466",
       justifyContent: "space-between",
       textTransform: 'uppercase',
-      paddingRight: 125,
-      paddingLeft:125,
+      paddingRight: 155,
+      paddingLeft:155,
       paddingBottom:20,
       paddingTop:20,
       borderRadius:10,
@@ -80,11 +111,30 @@ const styles = StyleSheet.create({
       
       
     },
+
+    button04:{
+      alignItems: "center",
+      backgroundColor: "#FFFF",
+      justifyContent: "space-between",
+      paddingRight: 125,
+      paddingLeft:125,
+      paddingBottom:20,
+      paddingTop:20,
+      borderRadius:10,
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 4 },
+      shadowOpacity: 0.2, 
+      shadowRadius: 7,
+      elevation: 4,
+    },
+    
+
     txt:{
-      color:'#ffff'
+      color:'#000'
        
     }
-
+    
+   
   },
 )
 
