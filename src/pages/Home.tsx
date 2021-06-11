@@ -20,7 +20,7 @@ export const Home = () => {
         
       </View>
       
-      {/* <TouchableHighlight onPress={() => {}}>
+       {/* <TouchableHighlight onPress={() => {}}>
           <View style={styles.button01}>
             <Text style={styles.txt}>Vamos lá</Text>
           </View>
@@ -37,13 +37,25 @@ export const Home = () => {
           </View>
          </TouchableHighlight> */}
   
-         <TouchableHighlight onPress={() => {}}>
+         {/* /* <TouchableHighlight onPress={() => {}}>
             <View style={styles.button04}>
             <Text style={styles.txt}>Entrar com o google</Text>
            
             </View>
-          </TouchableHighlight> 
+          </TouchableHighlight>   */} 
          
+         <View style={styles.form}>
+              <View style={styles.iconform}></View>
+              <View style={styles.alltext}>
+                  <Text>Nos ajude, é rápido :D</Text>
+                  <Text>No mercado Dia, você encontrou a marca ‘Nude’ de Leites e Bebidas?</Text>
+              </View>
+              <View style={styles.allbuttom}>
+                  <TouchableHighlight> <Text>Nos ajude, é rápido :D</Text></TouchableHighlight>
+                  <TouchableHighlight> <Text>Nos ajude, é rápido :D</Text></TouchableHighlight>
+              </View>
+                
+          </View>
         
 
     </SafeAreaView>
@@ -60,6 +72,28 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+   form:{
+     width:180, 
+     backgroundColor: '#000',
+   },
+   iconform:{
+
+   },
+   alltext:{
+
+   },
+   allbuttom:{
+
+   },
+
+
+
+
+
+
+
+
+  
   card:{
     backgroundColor: '#5A818A',
     width: 320,
