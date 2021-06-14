@@ -74,7 +74,13 @@ const styles = StyleSheet.create({
     fontWeight: 500,
   },
   buttontext:{
-  
+    marginTop:8,
+    marginBottom: 5,
+    marginLeft:14,
+    marginRight:14,
+    fontWeight: 600,
+    
+
     color:'#fff',
     fontSize:11,
   },
@@ -84,6 +90,7 @@ const styles = StyleSheet.create({
     height:30,
     backgroundColor: '#09BC8A',
     borderRadius:5,
+    marginBottom:15,
   },
 
 
