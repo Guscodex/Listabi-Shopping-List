@@ -1,5 +1,8 @@
 import React from 'react';
-import { StyleSheet, SafeAreaView, Text, View, TouchableHighlight, } from 'react-native';
+import { StyleSheet, SafeAreaView, Text, View, TouchableHighlight,   } from 'react-native';
+import { AntDesign } from '@expo/vector-icons'; 
+import CheckBox from '@react-native-community/checkbox';
+
 
 
 export const Extract = () => {
@@ -7,7 +10,7 @@ export const Extract = () => {
     <SafeAreaView style={styles.container}> 
       <Text>Meu extrato</Text>
 
-      <View style={styles.allproductcard}>
+      {/* <View style={styles.allproductcard}>
         <View style={styles.contentcard}>
         <View style={styles.imgproduct}>
 
@@ -38,8 +41,60 @@ export const Extract = () => {
                   </View>
               </View>
          </View>  
+      </View> */}
+
+{/* 
+      <View style={styles.buttonright}>
+      <TouchableHighlight onPress={() => {}}>
+          
+       <AntDesign name="arrowright" size={30} color="white" />
+         </TouchableHighlight>
+      </View> */}
+
+        {/* check */}
+      <View style={styles.checkbox}>
+        <View style={styles.imgcheck}></View>
+        <View style={styles.textcheck}>
+          <Text>Bolacha Zooreta Mãe Terra</Text>
+        <View style={styles.textitens}> 01 itens</View>
+        </View>
+        <View style={styles.check}>
+        </View>
       </View>
 
+
+        {/* no check */}
+      <View style={styles.checkbox}>
+        <View style={styles.imgcheck}></View>
+        <View style={styles.textcheck}>
+          <Text>Bolacha Zooreta Mãe Terra</Text>
+        <View style={styles.textitens}> 01 itens</View>
+        </View>
+        <View style={styles.check}>
+        </View>
+      </View>
+
+      {/* trash */}
+      <View style={styles.checkbox}>
+        <View style={styles.imgcheck}></View>
+        <View style={styles.textcheck}>
+          <Text>Bolacha Zooreta Mãe Terra</Text>
+        <View style={styles.textitens}> 01 itens</View>
+        </View>
+        <View style={styles.check}>
+        </View>
+      </View>
+
+      {/* trash check */}
+      <View style={styles.checkbox}>
+        <View style={styles.imgcheck}></View>
+        <View style={styles.textcheck}>
+          <Text>Bolacha Zooreta Mãe Terra</Text>
+        <View style={styles.textitens}> 01 itens</View>
+        </View>
+        <View style={styles.check}>
+        </View>
+      </View>
 
 
 
@@ -55,18 +110,90 @@ export const Extract = () => {
 }
 
 const styles = StyleSheet.create({
+  checkbox:{
+    width:315,
+    height:85,
+    borderWidth: 1,
+    borderRadius:10,
+    borderColor: '#09BC8A',
+    alignItems:'center',
+    display:'flex',
+    paddingLeft:8,
+    flexDirection:'row',
+   
+
+
+  },
+
+ 
+  imgcheck:{
+    width:60,
+    height:60,
+    borderRadius:10,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2, 
+    shadowRadius: 3,
+    elevation: 4,
+  
+
+
+  },
+  textcheck:{
+    fontSize: 15,
+    width:200,
+    paddingLeft:8,
+    fontWeight: 600,
+    
+  },
+  textitens:{
+    fontSize: 15,
+    fontWeight: 600,
+    color:'#535353',
+  },
+  check:{
+    
+  },
+  
+
+
+
+
+  buttonright:{
+    width:65,
+    height:65,
+    backgroundColor:'#09BC8A',
+    borderRadius:15,
+    alignItems:'center',
+    display:'flex',
+    paddingLeft:18,
+    flexDirection:'row',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2, 
+    shadowRadius: 4,
+    elevation: 4,
+   
+    
+    
+  },
+
+
+
   container: {
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
   },
+  
   allproductcard:{
     height: 250,
     width: 160,
     borderWidth: 1,
     borderColor:"#F56960",
     borderRadius:12,
+    
 
     
   },
