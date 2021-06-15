@@ -135,6 +135,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius:10,
     borderColor: '#F56960',
+    borderStartColor: "white",
     alignItems:'center',
     display:'flex',
     paddingLeft:8,
