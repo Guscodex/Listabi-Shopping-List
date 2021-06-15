@@ -64,7 +64,7 @@ export const Extract = () => {
 
 
         {/* no check */}
-      <View style={styles.checkbox}>
+      <View style={styles.checkboxcheck}>
         <View style={styles.imgcheck}></View>
         <View style={styles.textcheck}>
           <Text>Bolacha Zooreta Mãe Terra</Text>
@@ -75,7 +75,7 @@ export const Extract = () => {
       </View>
 
       {/* trash */}
-      <View style={styles.checkbox}>
+      <View style={styles.checkboxtrash}>
         <View style={styles.imgcheck}></View>
         <View style={styles.textcheck}>
           <Text>Bolacha Zooreta Mãe Terra</Text>
@@ -85,16 +85,7 @@ export const Extract = () => {
         </View>
       </View>
 
-      {/* trash check */}
-      <View style={styles.checkbox}>
-        <View style={styles.imgcheck}></View>
-        <View style={styles.textcheck}>
-          <Text>Bolacha Zooreta Mãe Terra</Text>
-        <View style={styles.textitens}> 01 itens</View>
-        </View>
-        <View style={styles.check}>
-        </View>
-      </View>
+    
 
 
 
@@ -124,6 +115,35 @@ const styles = StyleSheet.create({
 
 
   },
+  checkboxcheck:{
+    width:315,
+    height:85,
+    borderWidth: 1,
+    borderRadius:10,
+    borderColor: '#30837F',
+    alignItems:'center',
+    display:'flex',
+    paddingLeft:8,
+    flexDirection:'row',
+   
+
+
+  },
+  checkboxtrash:{
+    width:315,
+    height:85,
+    borderWidth: 1,
+    borderRadius:10,
+    borderColor: '#F56960',
+    alignItems:'center',
+    display:'flex',
+    paddingLeft:8,
+    flexDirection:'row',
+   
+
+
+  },
+ 
 
  
   imgcheck:{
@@ -149,6 +169,7 @@ const styles = StyleSheet.create({
   textitens:{
     fontSize: 15,
     fontWeight: 600,
+    paddingTop:10,
     color:'#535353',
   },
   check:{
