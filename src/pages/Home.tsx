@@ -76,13 +76,34 @@ export const Home = () => {
                 
                  
               </View>
-                
           </View>
+
+
+
+          <View style={styles.cardrecomand}>
+        
+         
+                <View style={styles.alltextcard}> 
+                <Text style={styles.titlecard}>Nós Recomendamos!</Text>  
+                <Text style={styles.textcardrecomand}>A arvorezinha representa os produtos sustentáveis perto de você</Text>
+                </View>
+                <View style={styles.iconrecomand}><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="14" cy="14" r="13" fill="white" stroke="#F56960" stroke-width="2"/>
+                <path d="M12.4614 25.0527H15.538L15.1761 21.3576H19.1576L18.4337 19.0838H19.1576L18.4337 16.8099H18.9766L13.9092 2.45618L8.8418 16.8099L9.56571 16.952L8.8418 19.0838H9.56571L8.8418 21.3576H12.8233L12.4614 25.0527Z" fill="#F56960"/>
+                </svg>
+              </View>  
+              </View>
+        
+
+
+
+
     </SafeAreaView>
   )
 }
 
 const styles = StyleSheet.create({
+  
   container: {
     fontSize: 25,
     flex: 1,
@@ -90,6 +111,69 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  cardrecomand:{
+    backgroundColor: 'rgba(3, 78, 57, 0.7)',
+    display: 'flex',
+    flexDirection:'row',
+   
+  
+    width: 290,
+    height: 90,
+    borderRadius:10,
+  },
+  iconrecomand:{
+    paddingTop:15,
+    paddingLeft:15,
+
+  },
+  alltextcard:{
+    width:225,
+    paddingTop:15,
+    paddingLeft:10,
+
+  },
+  titlecard:{
+    
+    color:'#FFFFFF',
+    fontSize:15,
+    fontWeight:600,
+    
+
+  },
+  textcardrecomand:{
+    paddingTop:5,
+    color:'#FFFFFF',
+    fontSize:12,
+    fontWeight:400,
+
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    form:{
      width:315, 
      height:170,
