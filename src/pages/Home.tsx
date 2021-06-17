@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   cardrecomand:{
-    backgroundColor: 'rgba(3, 78, 57, 0.7)',
+    backgroundColor: 'rgba(3, 78, 57, 0.8)',
     display: 'flex',
     flexDirection:'row',
    
